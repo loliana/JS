@@ -1,0 +1,93 @@
+console.log(my name is'+' '+'elena')
+
+//'my name is Elena. I am 5 years old. My favorite thing is care about pets.'
+var firstName='Elena';
+var lastName='Ordyakova';
+var age=39;
+var favoriteActivity='pets care';
+var city='Boston';
+
+alert('My name is '+ firstName+''+lastName+'. I am '+ age +' years old. My favorite thing to do is '+ favoriteActivity +'.'');
+
+var myDetails=[firstName, lastName, age, favoriteActivity];
+console.log(myDetails);
+
+myDetails.push('city');
+5
+myDetails
+....
+myDetails.pop()
+"Boston"
+myDetails.shift()
+"Mrs"
+.....
+myDetails.join(',');
+.....
+myDetails.push('human',1);
+7
+myDetails
+.....
+myDetails.splice(1,0,'human')
+[]
+myDetails
+.....
+
+var sports = ['football','baseball','soccer','curling','chess-boxing'];
+sports=[4];
+
+//length of array in terms of last element's position
+sport.length
+5
+sports[sports.length-1]
+"chess-boxing"
+sport[2]
+"soccer"
+
+document.getElementByTagName('form')
+....
+var form=document.getElementByTagName('form')[0]
+...
+form
+...
+form.children
+...
+form.children.length[0]
+...
+form.children[7]
+...
+form
+...
+document.getElementByTagName('input')
+...
+document.getElementByTagName('input')[0]
+...
+username
+...
+var password=document.getElementByTagName('input')[1]
+...
+password
+...
+
+//get a a handle on each element of the form
+var form = document.getElementByTagName('form');
+var username = document.getElementByTagName('input')[0];
+var password = document.getElementByTagName('input')[1];
+var password_confirm = document.getElementByTagName('input')[2];
+var submit_button= document.getElementByTagName('input')[3];
+var error_box = var form = document.getElementByTagName('p');
+
+//error message array
+var errors=[];
+var USER_MIN=5;
+var PW_MIN=8;
+
+submitButton.onsubmit=function(e) {
+if ((username.value.length>=USER_MIN)&& 
+  (password.value.length>=PW_MIN) &&
+  (passwoed.value === password_confirm.value)) {
+  console.log ('you submitted!');
+}
+else {
+  e.preventDefault();
+  }
+}
